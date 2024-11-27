@@ -1,0 +1,272 @@
+/* Estilos padrão */
+body {
+    background-color: #D6A8D1; /* Tom de roxo mais claro */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #60267A; /* Texto em tom escuro */
+}
+
+header {
+    background-color: #60267A;
+    color: white;
+    padding: 0.75rem 0;
+    padding-left: 120px; /* Distância extra para dar espaço para a imagem */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #FFB033;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.flex {
+    display: flex;
+    margin: 1.5rem 1rem;
+}
+
+aside {
+    width: 25%;
+    background-color: #D6A8D1; /* Novo tom de roxo mais claro */
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    color: #60267A;
+}
+
+aside h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside li {
+    margin-bottom: 0.5rem;
+}
+
+aside a {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    background-color: #D6C4E9; /* Tom intermediário mais suave */
+    border-radius: 0.25rem;
+    color: #60267A;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+aside a i {
+    margin-right: 0.5rem;
+}
+
+aside a:hover {
+    background-color: #FFB033;
+    color: #60267A;
+}
+
+main {
+    width: 75%;
+    background-color: #D6A8D1; /* Usando o tom mais claro */
+    padding: 1.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    margin-left: 1.5rem;
+    color: #60267A;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.news-item {
+    display: flex;
+    align-items: start;
+    margin-bottom: 1.5rem;
+}
+
+.news-item img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: 0.25rem;
+    border: 2px solid #FFB033;
+}
+
+.news-item h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #60267A;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Perfil do aluno */
+.student-info {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.student-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #FFB033;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.student-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #60267A;
+}
+
+/* Modo escuro */
+.dark-mode {
+    --primary-color: #FFB033;
+    --background-color: #000;
+    --text-color: #FFB033;
+    --secondary-background: #1c1c1c;
+    --link-color: #FFB033;
+}
+
+.dark-mode body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.dark-mode header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.dark-mode nav a {
+    color: var(--link-color);
+}
+
+.dark-mode aside {
+    background-color: var(--secondary-background);
+    color: var(--text-color);
+}
+
+.dark-mode main {
+    background-color: var(--secondary-background);
+    color: var(--text-color);
+}
+
+.dark-mode footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.theme-toggle {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--background-color);
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Imagem no canto superior esquerdo */
+.right-image {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Imagem no canto superior esquerdo */
+    width: 80px; /* Tamanho reduzido */
+    height: auto;
+    border-radius: 8px; /* Borda arredondada */
+    z-index: 10; /* Garantir que a imagem não fique sobre o texto */
+}
+
+/* Ajustando o header para dar espaço para a imagem */
+header {
+    background-color: #60267A;
+    color: white;
+    padding: 0.75rem 0;
+    padding-left: 120px; /* Distância extra para dar espaço para a imagem */
+}
+
+footer .footer-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+footer .footer-images img {
+    width: 100px;  /* Tamanho ajustado */
+    height: auto;
+    border-radius: 5px; /* Borda arredondada */
+}
+
+
+
+
+  

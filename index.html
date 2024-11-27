@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Portal do Aluno</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Portal do Aluno M-tech</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="notas.html">Notas</a></li>
+          <li><a href="horarios.html">Horários</a></li>
+          <li><a href="mensagens.html">Mensagens <span class="notification"></span></a></li>
+          <button class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i>
+          </button>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="flex">
+    <aside>
+      <!-- Adição do perfil do aluno -->
+      <div class="student-info">
+        <img src="./img/Neidiman Raposo Lima.jpg" alt="Foto do Aluno" class="student-photo">
+        <p class="student-name">Neidman Raposo Lima</p>
+      </div>
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="perfil.html"><i class="fas fa-user"></i>Perfil</a></li>
+        <li><a href="documentos.html"><i class="fas fa-file-alt"></i>Documentos</a></li>
+        <li><a href="financeiro.html"><i class="fas fa-dollar-sign"></i>Configurações</a></li>
+        <li><a href="biblioteca.html"><i class="fas fa-book"></i>Biblioteca</a></li>
+        <li><a href="suporte.html"><i class="fas fa-headset"></i>Suporte</a></li>
+      </ul>
+    </aside>
+    <main>
+        <h2>Notícias</h2>
+        <div class="news-item">
+          <img alt="Imagem de uma sala de aula com alunos atentos ao professor" height="100" src="https://storage.googleapis.com/a1aa/image/IKRwvWvPKkIkAxdtgaT7OXU0rBeZCGLRagsdy6CIHQjgQy5JA.jpg" width="150"/>
+          <div class="event-timer">
+            <h2>Próximo Evento: Aula Inaugural</h2>
+            <p id="timer"></p>
+          </div>
+        </div>
+        <div class="news-item">
+          <img alt="Imagem de um grupo de estudantes estudando juntos em uma biblioteca" height="100" src="https://storage.googleapis.com/a1aa/image/qVyMUw2mmE6cN1zeKEevukQGnFDBupZlmwWhiV53k1UeBJnnA.jpg" width="150"/>
+          <div>
+            <h3>Grupo de Estudos</h3>
+            <p>Forme grupos de estudos e melhore seu desempenho acadêmico.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <img alt="Imagem de um evento de tecnologia com várias pessoas assistindo a uma palestra" height="100" src="https://storage.googleapis.com/a1aa/image/f1J8BYQBqehLokLbswFdfM8V0fOzj9ec2B4ytjOTakuCIkceE.jpg" width="150"/>
+          <div>
+            <h3>Semana de Tecnologia</h3>
+            <p>Não perca a semana de tecnologia com palestras e workshops.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <img alt="Imagem de um estudante recebendo um certificado de conclusão de curso" height="100" src="https://storage.googleapis.com/a1aa/image/dXfEej4GFCiOs02RbAXIwoYw6qjmN6FuWfQjefYWNdEeQI58E.jpg" width="150"/>
+          <div>
+            <h3>Formatura</h3>
+            <p>Confira as datas e informações sobre a formatura deste semestre.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <img alt="Imagem de um professor explicando um conceito em um quadro branco" height="100" src="https://storage.googleapis.com/a1aa/image/caU7vjCh5rLrPNUMKMqtmQDoW57LEa9IekcxlmqGEQuegkzTA.jpg" width="150"/>
+          <div>
+            <h3>Novos Cursos</h3>
+            <p>Veja a lista de novos cursos disponíveis a partir do próximo semestre.</p>
+          </div>
+        </div>
+      </main>
+  </div>
+  <!-- Imagem no canto superior direito -->
+<img src="./img/mtechfundobranco.jpg" alt="Imagem" class="right-image">
+
+<!-- Rodapé com duas imagens -->
+<footer>
+    <div class="footer-images">
+        <img src="./img/secretaria.png" alt="Secretaria">
+        <img src="./img/logo_proj_lucas01.png" alt="Imagem 2">
+    </div>
+    <p>&copy; 2024 Portal do Aluno M-Tech. Todos os direitos reservados.</p>
+</footer>
+  <script src="./script.js"></script>
+</body>
+</html>
+`
